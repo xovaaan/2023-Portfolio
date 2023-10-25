@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Nunito:ital,wght@0,600;0,1000;1,400&family=Open+Sans:ital,wght@0,400;1,700;1,800&family=REM:wght@400;500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&family=Varela&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    font-family:  'Open Sans', sans-serif;
+    background-color: black;
+    color: azure;
+
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+     background-color: greenyellow;
+     color: black;
+}
+
+.link a{
+    padding-bottom: 1rem;
+    position: relative;
+    color: azure;
+}
+
+.link a::after{
+    width: 0;
+    bottom: 0;
+    left: 0; 
+    height: 2px;
+    content: ""; 
+    position: absolute; 
+    background-color: greenyellow;
+    transition: all 0.29s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
+header{
+    position: relative;
+    padding-top: 4rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+header .contents h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+header .image{
+    position: relative; 
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+header .image:hover{
+   opacity: 2;
+}
+
+.intro{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.intro-description{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 4rem;
+    font-size: 3rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0  1000px 50px greenyellow ;
+    z-index: -100;
+}
+
+.container{
+    padding: 8rem 1rem;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.paragraph{
+    margin-bottom: 30px;
+}
+
+/* section part */
+
+section .second-intro{
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.features{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.features .cards{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.features .cards:hover{
+    background-color: #323232;
+   border-color: azure;
+}
+
+.features .cards span{
+    display: inline-block;
+    background-color: greenyellow;
+    color: black;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-radius: 7px ;
+    padding: 5px;
+}
+
+.features .cards h3{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.features .cards p{
+    margin-bottom: 1rem;
+}
+
+.features .cards a{
+    color: azure;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.features .cards a:hover{
+    color: greenyellow;
+}
+
+.features .cards a i{
+    font-size: 1.6rem;
+}
+/* Project */
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 6rem;
+    gap: 2.4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+ .second-intro{ 
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+}
+
+.new-one{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.projects .cards{
+    padding: 2rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    color:#D6DBDF ;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+.projects .cards:hover{
+    background-color: #323232;
+    border-color: azure;
+    color: white;
+}
+
+.projects .cards .contents{
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.projects .cards h3{
+    font-size: 1.4rem;
+    margin-bottom: 13px;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+}
+
+.projects .cards p{
+    margin-bottom: 1rem;
+}
+
+.projects .cards a{
+    color: azure;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+}
+
+.projects .cards a:hover{
+    color: greenyellow;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 400px repeat(3,1fr);
+    gap: 2rem;
+    position: relative;
+    margin-left: 7rem;
+    margin-top: 11rem;
+}
+ 
+footer .coloumn .social-media{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .coloumn {
+    margin-right: 10rem;
+}
+
+
+footer .coloumn .social-media a{
+    color: aliceblue;
+    border: 1px solid azure;
+    border-radius: 100%;
+    padding: 4px 9px;
+    font-family: 1rem;
+    transition: all 0.5s ease;
+}
+
+footer .coloumn .social-media a:hover{
+    background-color: yellowgreen;
+    color: black;
+    border-color: yellowgreen;
+}
+
+
+
+footer .coloumn .logo{
+    margin-bottom: 1rem;
+    max-width: 110px;
+}
+
+footer .coloumn p{
+    margin-bottom: 1.8rem;
+    font-family: 'Open Sans', sans-serif ;
+}
+
+.last-point h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+}
+
+.last-point a{
+    display: block;
+    margin-bottom: 1rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.last-point a:hover{
+    color: yellowgreen;
+}
+
+.copyright{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+
+@media (width<900px){
+    .nav-links{
+        display: none;
+    }
+    .features{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .btn{
+        margin-left: 9rem;
+    }
+
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (width<600px){ 
+    header .image::before{
+        display: none;
+    }
+    
+    .features{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
