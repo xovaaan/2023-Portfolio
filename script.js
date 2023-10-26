@@ -1,7 +1,7 @@
-function scrollToElement(element,existence = 0){
-    const elements = document.querySelectorAll(element);
-    if (elements.length > existence) {
-        element[existence].scrollToView({behavior: 'smooth'});
+function scrollToElement(elementSelector,instance = 0){
+    const elements = document.querySelectorAll(elementSelector);
+    if (elements.length > instance) {
+        elements[instance].scrollIntoView({behavior: 'smooth'});
 }
 }
 
@@ -11,5 +11,13 @@ const link3 = document.getElementById('link3');
 
 link1.addEventListener('click', () => {
     scrollToElement('.second-intro');
+    
+})
+link2.addEventListener('click', () => {
+    scrollToElement('.second-intro',1);
+    
+})
+link3.addEventListener('click', () => {
+    scrollToElement('.coloumn');
     
 })
